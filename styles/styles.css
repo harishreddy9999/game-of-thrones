@@ -1,0 +1,286 @@
+body,html{
+	width: 100%;
+	height: 100%;
+}
+
+body,h1,h2,h3,h4,h5,h6{
+	font-family: 'Cinzel Decorative', cursive;
+	font-weight: 700;
+}
+
+.topnav{
+	font-size: 16px;
+	border-bottom: 1px outset rgba(192,192,192,0.5);
+	background: rgba(192,192,192,0.7);
+	box-shadow: 0px 1px rgba(0,0,0,0.3);
+}
+
+.topnav ul .navbar-nav li a{
+	background: rgba(28,28,28,0.1);
+	color: #000;
+}
+
+.topnav ul .navbar-nav li a:hover, .topnav ul .navbar-nav li a:focus{
+	background: rgba(255,255,255,0.5);
+	color: #000;
+} 
+
+.topnav .navbar-brand{
+	background: rgba(28,28,28,0.0);
+	color: #000;
+}
+
+.topnav .navbar-brand:hover, .topnav .navbar-brand:focus{
+	background: rgba(255,255,255,0.5);
+	color: #000;
+}
+
+.lead{
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.intro-header{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	background: url('https://images5.alphacoders.com/403/thumb-1920-403408.jpg');
+	background-size: cover;
+	height: 855px;
+}
+
+.bg-overlay{
+	background: rgba(0,0,0,0.3);
+	height: 855px;
+}
+
+.intro-message{
+	position: relative;
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
+
+.intro-message > h1{
+	margin-top: -50px;
+	text-shadow: 2px 1px 2px #000;
+	font-size: 5em;
+	color: rgba(255,255,255,0.7);
+}
+
+.intro-message > h3{
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	color: rgba(255,255,255,0.7);
+}
+
+.intro-divider{
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+@media(max-width: 767px){
+	.intro-message{
+		padding-bottom: 15%;
+	}
+
+	.intro-message > h1{
+		font-size: 3em;
+	}
+
+	ul .intro-social-buttons > li{
+		display: block;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+
+	ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+hr.intro-divider {
+  border: 1px outset rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  color: #000;
+  border: 2px outset rgba(0, 0, 0, 0.9);
+  background: #C0C0C0;
+  text-shadow: 1px 1px 1px rgba(0,0,0, 20);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+	color: #fff;
+  border: 2px outset rgba(0, 0, 0, 0.9);
+  background: rgba(0,0,0, 0.9);
+  transform:scale(1.1);
+  transition: 0.2s;
+  text-shadow: 1px 1px 1px rgba(0,0,0, 20);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+  letter-spacing: 2px;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    background: url('https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/08/143944974601-materialdesign_introduction.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 2055px;
+}
+
+.content-section-sb{
+  padding: 50px 0;
+  background: url('http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-7863.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 3500px;
+}
+
+.content-section-sh{
+  padding: 50px 0;
+  background: url('http://www.topofandroid.com/wp-content/uploads/2015/05/Android-L-Material-Design-Wallpapers-5.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.content-section-sc{
+  padding: 50px 0;
+  background: url('http://gencept.com/wp-content/uploads/2016/04/Wallpaper-of-the-Week-25-Material-Design-Inspired-Wallpapers_09-@-GenCept.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.bg-overlay2 {
+  margin-top: -50px;
+  background: rgba(255, 255, 255, 0.2);
+  height: 855px;
+}
+
+// section {
+//   color: black;
+//   background: url('http://thedesigninspiration.com/wp-content/uploads/2012/11/Wallpaper-l-010.jpg') no-repeat center center fixed;
+//   background-size: cover;
+// }
+
+ #below-section {
+  color: #000;
+}
+
+#small-text {
+  color: white;
+}
+
+#books .books-item{
+	margin: 0 0 15px;
+	right: 0;
+	border: 1px outset rgba(255, 255, 255, 0.6);
+}
+
+#books .books-item:hover {
+  transition: 0.5s;
+  box-shadow: 5px 10px 5px rgba(0,0,0,0.9);
+}
+
+#books .books-item .books-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#books .books-item .books-link .books-hover {
+  background: rgba(0, 0, 0, .7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s,
+}
+
+#books .books-item .books-link .books-hover:hover {
+  opacity: 1;
+}
+
+#books .books-item .books-link .books-hover .books-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: #fff;
+}
+
+#books .books-item .books-link .books-hover .books-hover-content i {
+  margin-top: -12px;
+}
+
+#books .books-item .books-link .books-hover .books-hover-content h3,
+#books .books-item .books-link .books-hover .books-hover-content h4 {
+  margin: 0;
+}
+
+#books .books-item .books-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: rgba(0,0,0, 0.8);
+  text-align: center;
+  padding: 25px;
+}
+
+.books-caption{
+  height: 80px;
+  cursor: pointer;
+}
+
+#books .books-item .books-caption h4 {
+  color: #fff;
+  text-transform: none;
+  margin: 0;
+}
+
+#books .books-item .books-caption p {
+  //font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 13px;
+  margin: 0;
+}
+
+#books * {
+  z-index: 2;
+}
+
+@media (min-width:767px) {
+  #books .books-item {
+    margin: 0 0 30px;
+  }
+}
+
+
+footer {
+    padding: 50px 0;
+    background: rgba(192, 192, 192, 0.9);
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+.resLink{
+  color: #846d74 !important;
+  text-decoration: underline;
+}
+
+.resLink:hover{
+  color: #ff0009 !important;
+  text-decoration: underline;
+}

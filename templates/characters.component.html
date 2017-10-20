@@ -1,0 +1,20 @@
+<div class="row" >
+	<span class="pull-left">&nbsp;&nbsp;&nbsp;&nbsp;Sort by (book-name)/(culture) : &nbsp; <input ng-model="sortCriteria"/></span>&nbsp;&nbsp;&nbsp;<hr>
+	<div ng-repeat="character in $ctrl.characters | filter:sortCriteria" ui-sref="singlecharacter({characterId: character.url.replace('https://anapioficeandfire.com/api/characters/','')})" ng-if="character.name">
+		<div  ng-class="{'clearfix': $index%3 === 0}" class="col-md-4 col-sm-6 books-item">
+			<a href="#" class="books-link" data-toggle="modal">
+				<div class="books-hover">
+					<div class="books-hover-content">
+						<i class=""></i>
+					</div>
+				</div>
+			</a>
+			<div class="books-caption">
+				<h4>
+					{{character.name}}
+				</h4>
+				<p id="small-text" class="text-muted">{{character.culture}} </p>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,23 @@
+  <div class="row">
+	<div class="col-md-12">
+		<div class="text-center"> 
+			<h4>{{$ctrl.singlecharacter.name}}</h4>
+			<h4>gender : {{$ctrl.singlecharacter.gender}} </h4>
+			<h4>culture : {{$ctrl.singlecharacter.culture}} </h4>
+			<h4>born : {{$ctrl.singlecharacter.born}} </h4>
+			<h4>died : {{$ctrl.singlecharacter.died}} </h4>
+			<h4>titles : <span ng-repeat="title in $ctrl.singlecharacter.titles">{{title}}, &nbsp;</span></h4>
+			<h4>aliases : <span ng-repeat="alias in $ctrl.singlecharacter.aliases">{{alias}}, &nbsp;</span></h4>
+			<h4>father : <links link="{{$ctrl.singlecharacter.father}}"></links> </h4>
+			<h4>mother : <links link="{{$ctrl.singlecharacter.mother}}"></links> </h4>
+			<h4>spouse : <links link="{{$ctrl.singlecharacter.spouse}}"></links></h4>
+			<!-- <h4>founded : {{$ctrl.singlehouse.founded}}</h4> -->
+			<h4>allegiances : <span ng-repeat="allegians in $ctrl.singlecharacter.allegiances"><links link="{{allegians}}"></links>, &nbsp;</span></h4>
+			<!-- <h4>died out : {{$ctrl.singlehouse.diedOut}}</h4> -->
+			<h4>books : <span ng-repeat="book in $ctrl.singlecharacter.books track by $index"><links link="{{book}}"></links>, &nbsp;</span></h4>
+			<h4>povBooks : <span ng-repeat="povBook in $ctrl.singlecharacter.povBook"><links link="{{povBook}}"></links>, &nbsp;</span></h4>
+			<h4>TV series : <span ng-repeat="tvser in $ctrl.singlecharacter.tvSeries">{{tvser}}, &nbsp;</span></h4>
+			<h4>played by : <span ng-repeat="player in $ctrl.singlecharacter.playedBy">{{player}}, &nbsp;</span></h4>
+		</div>
+	</div>
+</div>

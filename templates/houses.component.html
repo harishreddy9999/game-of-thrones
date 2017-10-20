@@ -1,0 +1,20 @@
+<div class="row" >
+	<span class="pull-left">&nbsp;&nbsp;&nbsp;&nbsp;Sort by (house-name)/(region) : &nbsp; <input ng-model="sortCriteria"/></span>&nbsp;&nbsp;&nbsp;<hr>
+	<div ng-repeat="house in $ctrl.houses | filter:sortCriteria" ui-sref="singlehouse({houseId: house.url.replace('https://anapioficeandfire.com/api/houses/','')})">
+		<div  ng-class="{'clearfix': $index%3 === 0}" class="col-md-4 col-sm-6 books-item">
+			<a href="#" class="books-link" data-toggle="modal">
+				<div class="books-hover">
+					<div class="books-hover-content">
+						<i class=""></i>
+					</div>
+				</div>
+			</a>
+			<div class="books-caption">
+				<h4>
+					{{house.name}}<!-- {{houseId = house.url.match(/(\d+)/)[0]}} -->
+				</h4>
+				<p id="small-text" class="text-muted">{{house.region}} </p>
+			</div>
+		</div>
+	</div>
+</div>

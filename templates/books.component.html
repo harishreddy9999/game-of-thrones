@@ -1,0 +1,22 @@
+<div class="row" >
+	<span class="pull-left">&nbsp;&nbsp;&nbsp;&nbsp;Sort by book-name : &nbsp; <input ng-model="sortCriteria"/></span>&nbsp;&nbsp;&nbsp;<hr>
+	<div ng-repeat="book in $ctrl.books | filter:sortCriteria" ui-sref="singlebook({bookId: book.url.replace('https://anapioficeandfire.com/api/books/','')})">
+		<div  ng-class="{'clearfix': $index%3 === 0}" class="col-md-4 col-sm-6 books-item">
+			<a href="#" class="books-link" data-toggle="modal">
+				<div class="books-hover">
+					<div class="books-hover-content">
+						<i class="fa fa-fire fa-3x"></i>
+					</div>
+				</div>
+				<img src="https://images-na.ssl-images-amazon.com/images/I/61XGPTSDbEL.jpg" 
+					alt="Game of Thrones" class="img-responsive" style="height: 350px;">
+			</a>
+			<div class="books-caption">
+				<h4>
+					{{book.name}}
+				</h4>
+				<p id="small-text" class="text-muted"><span ng-repeat="author in book.authors">{{author}}, </span></p>
+			</div>
+		</div>
+	</div>
+</div>

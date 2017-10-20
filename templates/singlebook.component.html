@@ -1,0 +1,16 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="text-center">
+			<h4>{{$ctrl.singlebook.name}}</h4>
+			<h4>ISBN : {{$ctrl.singlebook.isbn}} </h4>
+			<h4>number of pages : {{$ctrl.singlebook.numberOfPages}} </h4>
+			<h4>author : <span ng-repeat="author in $ctrl.singlebook.authors">{{author}}, &nbsp;</span></h4>
+			<h4>publishers : {{$ctrl.singlebook.publisher}}</h4>
+			<h4>country : {{$ctrl.singlebook.country}} </h4>
+			<h4>media type: {{$ctrl.singlebook.mediaType}} </h4>
+			<h4>released date : {{$ctrl.singlebook.released | date}} </h4>
+			<h4>characters : <span ng-repeat="character in $ctrl.singlebook.characters"><links link="{{character}}"></links>, &nbsp;</span></h4>
+			<h4>point of view characters : <span ng-repeat="character in $ctrl.singlebook.povCharacters"><links link="{{character}}"></links>, &nbsp;</span></h4>
+		</div>
+	</div>
+</div>

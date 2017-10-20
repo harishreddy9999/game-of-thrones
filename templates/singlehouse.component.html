@@ -1,0 +1,21 @@
+  <div class="row">
+	<div class="col-md-12">
+		<div class="text-center"> 
+			<h4>{{$ctrl.singlehouse.name}}</h4>
+			<h4>region : {{$ctrl.singlehouse.region}} </h4>
+			<h4>coat of arms : {{$ctrl.singlehouse.coatOfArms}} </h4>
+			<h4>words : {{$ctrl.singlehouse.words}} </h4>
+			<h4>titles : <span ng-repeat="title in $ctrl.singlehouse.titles">{{title}}, &nbsp;</span></h4>
+			<h4>seats : <span ng-repeat="seat in $ctrl.singlehouse.seats">{{seat}}, &nbsp;</span></h4>
+			<h4>current lord : <links link="{{$ctrl.singlehouse.currentLord}}"></links> </h4>
+			<h4>heir : <links link="{{$ctrl.singlehouse.heir}}"></links> </h4>
+			<h4>overlord : <links link="{{$ctrl.singlehouse.overlord}}"></links></h4>
+			<h4>founded : {{$ctrl.singlehouse.founded}}</h4>
+			<h4>founder : <links link="{{$ctrl.singlehouse.founder}}"></links></h4>
+			<h4>died out : {{$ctrl.singlehouse.diedOut}}</h4>
+			<h4>ancestral weapons : <span ng-repeat="ancestralWeapon in $ctrl.singlehouse.ancestralWeapons track by $index">{{ancestralWeapon}}, &nbsp;</span></h4>
+			<h4>cadet branches : <span ng-repeat="cadetBranch in $ctrl.singlehouse.cadetBranches"><links link="{{cadetBranch}}"></links>, &nbsp;</span></h4>
+			<h4>sworn members : <span ng-repeat="swornMember in $ctrl.singlehouse.swornMembers"><links link="{{swornMember}}"></links>, &nbsp;</span></h4>
+		</div>
+	</div>
+</div>
